@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.14.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.9.1"
+    },
+    "version": "1.17.4",
+    "libraryName": "gcds-components",
+    "libraryId": "e5e5c1ed-df12-4b07-bba3-d1743266afd7",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "gcds_components",
+    "solutionShortDescription": "gcds_components description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
