@@ -1,23 +1,41 @@
+/* eslint-disable no-script-url */
 import * as React from 'react';
 //import styles from './GcdsComponents.module.scss';
 import { IGcdsComponentsProps } from './IGcdsComponentsProps';
-import '@cdssnc/gcds-components-react/gcds.css' 
 import { GcdsButton, GcdsCard, GcdsPagination, GcdsSrOnly } from '@cdssnc/gcds-components-react';
 
 const GcdsComponents : React.FunctionComponent<IGcdsComponentsProps> = (props) => {
   
   return (
       <section>
-        
+
         <h2>GC DESIGN COMPONENTS</h2>
 
         <h3> Card</h3>
-        <GcdsCard
-          cardTitle="Card title link"
-          href="#"
-          tag="Tag"
-          description="Description or supporting text relating to the headline. Longer text will be truncated with ..."
-        />
+        <div style={{display: 'grid', gridTemplateColumns: '32% 32% 32%', columnGap: '2%'}}>
+          <div>
+          <GcdsCard
+            cardTitle="Card title link"
+            href="#"
+            tag="Tag"
+            description="Description or supporting text relating to the headline. Longer text will be truncated with ..."
+          >
+            <div slot="footer">footer information</div>
+          </GcdsCard>
+          </div>
+
+          <div>
+
+          <GcdsCard
+            cardTitle="Card 2"
+            href="#"
+            tag="Tag"
+            description="Description or supporting text relating to the headline. Longer text will be truncated with ..."
+          >
+            <div slot="footer">footer information</div>
+          </GcdsCard>
+          </div>
+        </div>
 
         <h3>Pagination</h3>
         <GcdsPagination
@@ -25,8 +43,10 @@ const GcdsComponents : React.FunctionComponent<IGcdsComponentsProps> = (props) =
           currentPage={9}
           totalPages={15}
           previousHref={'#previous'}
-          nextHref={'#next'}
+          nextLabel={'javascript:void(0)'}
+          nextHref={'www.google.ca'}
           display={'list'}
+          lang={'en'}
         />
 
         <h3>Buttons</h3>
