@@ -1,8 +1,9 @@
 /* eslint-disable no-script-url */
 import * as React from 'react';
 //import styles from './GcdsComponents.module.scss';
+import '@cdssnc/gcds-components-react/gcds.css'
 import { IGcdsComponentsProps } from './IGcdsComponentsProps';
-import { GcdsButton, GcdsCard, GcdsPagination, GcdsSrOnly } from '@cdssnc/gcds-components-react';
+import { GcdsButton, GcdsCard, GcdsPagination } from '@cdssnc/gcds-components-react';
 
 const GcdsComponents : React.FunctionComponent<IGcdsComponentsProps> = (props) => {
   
@@ -76,17 +77,6 @@ const GcdsComponents : React.FunctionComponent<IGcdsComponentsProps> = (props) =
             </GcdsButton>
           </div>
         </div>
-
-        <div>
-          <h3>Screen Reader Only</h3>
-          <GcdsSrOnly>
-            Text only seen by assistive technologies
-          </GcdsSrOnly>
-        </div>
-
-        
-
-       
 
 
       </section>
